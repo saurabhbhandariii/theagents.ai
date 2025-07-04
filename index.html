@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theagents.ai - Empowering Enterprises with Scalable, Secure AI Agents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom container for consistent width */
+        .container {
+            max-width: 1200px;
+        }
+
+        /* Custom gradients for consistency, matching the images where possible */
+        .gradient-blue-purple {
+            background-image: linear-gradient(to right, #3B82F6, #A855F7);
+        }
+        .gradient-blue-cyan {
+            background-image: linear-gradient(to right, #3B82F6, #06B6D4);
+        }
+        .gradient-purple-pink {
+            background-image: linear-gradient(to right, #A855F7, #EC4899);
+        }
+        .gradient-green-emerald {
+            background-image: linear-gradient(to right, #22C55E, #10B981);
+        }
+        .gradient-orange-red {
+            background-image: linear-gradient(to right, #F97316, #EF4444);
+        }
+        .gradient-indigo-purple {
+            background-image: linear-image_66a499.pnggradient(to right, #6366F1, #A855F7);
+        }
+        .gradient-teal-blue {
+            background-image: linear-gradient(to right, #14B8A6, #3B82F6);
+        }
+        
+        /* Specific icon background colors based on image analysis */
+        .icon-bg-blue { background-color: #3B82F6; }
+        .icon-bg-purple { background-color: #A855F7; }
+        .icon-bg-green { background-color: #22C55E; }
+        .icon-bg-red { background-color: #EF4444; }
+        .icon-bg-yellow { background-color: #FACC15; }
+        .icon-bg-teal { background-color: #14B8A6; }
+        .icon-bg-orange { background-color: #F97316; }
+        .icon-bg-pink { background-color: #EC4899; }
+
+        /* Animation for sticky header */
+        .header-sticky {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* md shadow */
+        }
+        /* Default header shadow */
+        #main-header {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* sm shadow */
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <header id="main-header" class="bg-white py-4 fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                theagents.ai
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 text-lg hover:text-blue-600 font-medium transition-colors">Platform</a>
+                <a href="#" class="text-gray-700 text-lg hover:text-blue-600 font-medium transition-colors">Solutions</a>
+                <a href="#" class="text-gray-700 text-lg hover:text-blue-600 font-medium transition-colors">Partners</a>
+                <a href="#" class="text-gray-700 text-lg hover:text-blue-600 font-medium transition-colors">Company</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-700 text-lg hover:text-blue-600 font-medium transition-colors hidden md:block">Enterprise AI</a>
+                <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+                    Get Started
+                </button>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+    <div class="pt-[76px]"></div> <section class="bg-gradient-to-b from-blue-50 to-white py-20 md:py-32 text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Empowering Enterprises with<br class="hidden sm:inline"> Scalable, Secure AI Agents
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10">
+                No-Code Platform To Rapidly Build Agentic AI Solutions. Transform your enterprise with intelligent automation, autonomous workflows, and AI-driven insights.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Get Started Now
+                </button>
+                <button class="bg-white text-blue-600 border border-blue-600 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl hover:text-blue-700 hover:border-blue-700 transition-all duration-300">
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Our Agentic AI Platform in Action</h2>
+            <img src="https://synapse-ai-agents.lovable.app/lovable-uploads/6b74b514-97ac-4f3b-81d5-f91883abc6e7.png" alt="Agentic AI Platform Diagram" class="w-full max-w-5xl mx-auto rounded-lg shadow-xl border border-gray-200">
+            <p class="text-md text-gray-500 mt-4">A high-level overview of our intelligent automation ecosystem.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">No-Code Platform To Rapidly Build Agentic AI Solutions</h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-16">
+                A comprehensive platform that combines the power of AI connectors, generative AI, and autonomous agents to transform your enterprise operations with unprecedented speed and efficiency.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database text-white"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 12a9 3 0 0 0 18 0"/><path d="M3 12v6a9 3 0 0 0 18 0v-6"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">100+ Connectors</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">AI Connectors</h4>
+                    <p class="text-base text-gray-600 mb-4">Centralize Knowledge</p>
+                    <p class="text-base text-gray-600">Ingest millions of unstructured data using 100+ AI connectors. Connect to databases, APIs, documents, emails, and web sources seamlessly.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bricks text-white"><path d="M8.2 2H4a2 2 0 0 0-2 2v6.2c0 1.2.7 2.2 1.8 2.8L12 22l7.2-6.2c1.1-.6 1.8-1.7 1.8-2.8V4a2 2 0 0 0-2-2h-4.2c-1.2 0-2.2.7-2.8 1.8L12 12l-6.2-7.2C5.5 2.7 4.5 2 3.2 2Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">15+ LLM Models</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">AI Engine</h4>
+                    <p class="text-base text-gray-600 mb-4">Gen AI</p>
+                    <p class="text-base text-gray-600">Read, analyze and generate any unstructured data with advanced LLMs, RAG architectures, and proprietary foundation models.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-white"><path d="M4 14a1 1 0 0 1-.2-.8L2.2 6.8A.5.5 0 0 1 3 6h7l3.8-3.8A.5.5 0 0 1 14 2h7a1 1 0 0 1 1 1.2l-1.8 6.4a.5.5 0 0 1-.7.2l-6.3-3.1a1 1 0 0 0-1.1-.1L6 14H4Z"/><path d="M14 10a1 1 0 0 1-.2-.8l-1.6-5.4A.5.5 0 0 1 12 3h7a1 1 0 0 1 1 1.2l-1.8 6.4a.5.5 0 0 1-.7.2l-6.3-3.1a1 1 0 0 0-1.1-.1L6 14H4Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Multi-Agent Systems</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Advanced AI</h4>
+                    <p class="text-base text-gray-600 mb-4">Agentic AI</p>
+                    <p class="text-base text-gray-600">Make AI autonomous for dynamic planning and execution. Multi-agent systems that collaborate and make decisions independently.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-kanban text-white"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M8 7v7"/><path d="M12 7v10"/><path d="M16 7v5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Visual Workflow Designer</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Workflow Engine</h4>
+                    <p class="text-base text-gray-600 mb-4">Process Automation</p>
+                    <p class="text-base text-gray-600">Design complex workflows with drag-and-drop interface. Integrate human-in-the-loop processes with AI automation.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2 text-white"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">15x Faster Development</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">No-Code Builder</h4>
+                    <p class="text-base text-gray-600 mb-4">Rapid Development</p>
+                    <p class="text-base text-gray-600">Build enterprise-grade AI solutions without coding. Empower business users to create and deploy AI applications.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">99.99% Uptime SLA</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Enterprise Security</h4>
+                    <p class="text-base text-gray-600 mb-4">SOC2 Compliant</p>
+                    <p class="text-base text-gray-600">Military-grade encryption, role-based access control, and compliance with international security standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Enterprise AI Capabilities</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive AI capabilities designed to transform every aspect of your business operations with intelligent automation and insights.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-4 mb-12" id="capabilities-tabs">
+                    </div>
+
+                <div class="border-0 shadow-2xl bg-gradient-to-br from-white to-gray-50 hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] rounded-lg overflow-hidden" id="capability-display-card">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What Makes theagents.ai Unique?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our platform differentiates itself with its relentless focus on our core principles – AI-First Architecture, No-Code Simplicity, Vertical Integration, and End-to-End Automation. Built for the future of intelligent enterprise operations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-white"><path d="M4 14a1 1 0 0 1-.2-.8L2.2 6.8A.5.5 0 0 1 3 6h7l3.8-3.8A.5.5 0 0 1 14 2h7a1 1 0 0 1 1 1.2l-1.8 6.4a.5.5 0 0 1-.7.2l-6.3-3.1a1 1 0 0 0-1.1-.1L6 14H4Z"/><path d="M14 10a1 1 0 0 1-.2-.8l-1.6-5.4A.5.5 0 0 1 12 3h7a1 1 0 0 1 1 1.2l-1.8 6.4a.5.5 0 0 1-.7.2l-6.3-3.1a1 1 0 0 0-1.1-.1L6 14H4Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">AI First Approach</h3>
+                    <p class="text-lg text-gray-600 mb-6">Automate processes not possible with traditional rule-based RPA systems. Our AI-first methodology enables intelligent decision making and adaptive workflows that learn and evolve.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-blue-purple"></span>Intelligent Decision Making</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-blue-purple"></span>Adaptive Learning Systems</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-blue-purple"></span>Context Understanding & Processing</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2 text-white"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">No-Code Platform</h3>
+                    <p class="text-lg text-gray-600 mb-6">Allow SMEs to lead the Automation initiatives. Point & click to automate complex processes without requiring technical expertise or programming knowledge. Democratize AI for everyone.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-purple-pink"></span>Visual Workflow Builder</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-purple-pink"></span>Drag & Drop Interface</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-purple-pink"></span>Business User Friendly Design</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers-3 text-white"><path d="m12 17 8-4-8-4-8 4 8 4Z"/><path d="m20 12-8 4-8-4"/><path d="m20 8-8 4-8-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Vertically Integrated</h3>
+                    <p class="text-lg text-gray-600 mb-6">Eliminate the need for third-party systems, bot licenses, and multiple integrations. One comprehensive platform for all your AI and automation needs with seamless connectivity.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-green-emerald"></span>Single Platform Solution</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-green-emerald"></span>Reduced System Complexity</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-green-emerald"></span>Lower Total Cost of Ownership</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes text-white"><path d="M2.97 18.5a1.5 1.5 0 0 0 1.25.5h13.56a1.5 1.5 0 0 0 1.25-.5L22 13.5l-9.6-6.23a1.5 1.5 0 0 0-1.78 0L2 13.5l.97 5Z"/><path d="M12 22V13.5"/><path d="m2.97 18.5 8.6-5.5m9.46 0-8.6 5.5"/><path d="M12 7.5v-5A1.5 1.5 0 0 0 10.5 1"/><path d="M14.5 1A1.5 1.5 0 0 0 16 2.5v5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">End-to-End Automation</h3>
+                    <p class="text-lg text-gray-600 mb-6">Achieve complete process automation using one holistic intelligent automation platform. From data ingestion to decision making and execution - everything unified.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-orange-red"></span>Complete Process Coverage</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-orange-red"></span>Holistic Automation Approach</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-orange-red"></span>Seamless System Integration</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-indigo-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Enterprise Security</h3>
+                    <p class="text-lg text-gray-600 mb-6">Built with enterprise-grade security from day one. SOC2 compliance, military-grade data encryption, and comprehensive audit trails for complete peace of mind.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-indigo-purple"></span>SOC2 Compliant Infrastructure</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-indigo-purple"></span>Military-Grade Encryption</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-indigo-purple"></span>Comprehensive Audit Trails</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge text-white"><path d="m12 14 4-4"/><path d="M3.34 19.06a8 8 0 0 1 14.32 1.37"/><path d="M18.66 19.06a8 8 0 0 0-14.32 1.37"/><path d="M12 2v10"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Rapid Deployment</h3>
+                    <p class="text-lg text-gray-600 mb-6">Deploy AI solutions in days, not months. Pre-built templates, industry-specific accelerators, and guided setup processes that get you up and running fast.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-teal-blue"></span>Quick Time-to-Value</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-teal-blue"></span>Pre-built Industry Templates</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-teal-blue"></span>Guided Setup Processes</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-2 text-white"><path d="M14 19a6 6 0 0 0-12 0"/><circle cx="8" cy="9" r="4"/><path d="M22 19a6 6 0 0 0-6-6h-2c-.7 0-1.4.3-2 .8"/><circle cx="16" cy="9" r="4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Collaborative AI</h3>
+                    <p class="text-lg text-gray-600 mb-6">Human-AI collaboration at its finest. AI agents work alongside your team, augmenting human capabilities rather than replacing them for optimal productivity.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-orange-red"></span>Human-AI Collaboration</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-orange-red"></span>Augmented Intelligence</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-orange-red"></span>Seamless Team Integration</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <div class="w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto icon-bg-pink">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud text-white"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.0 0 0 1 0 9Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Scalable Architecture</h3>
+                    <p class="text-lg text-gray-600 mb-6">Built to scale from startup to enterprise. Cloud-native architecture that grows with your business needs and handles increasing workloads effortlessly.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-purple-pink"></span>Cloud-Native Infrastructure</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-purple-pink"></span>Auto-Scaling Capabilities</li>
+                        <li class="flex items-center text-base"><span class="w-2 h-2 rounded-full mr-2 gradient-purple-pink"></span>Enterprise-Ready Architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Proven Results Across Industries</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-16">
+                Numbers that speak for our platform's effectiveness
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
+                <div class="flex flex-col items-center p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-blue-700 mb-2">15x</div>
+                    <div class="text-lg font-semibold text-gray-900">Faster Development</div>
+                    <p class="text-base text-gray-600">vs Traditional Methods</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-purple-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-purple-700 mb-2">100+</div>
+                    <div class="text-lg font-semibold text-gray-900">AI Connectors</div>
+                    <p class="text-base text-gray-600">Data Sources</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-green-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-green-700 mb-2">99.99%</div>
+                    <div class="text-lg font-semibold text-gray-900">Uptime SLA</div>
+                    <p class="text-base text-gray-600">Enterprise Grade</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-red-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-red-700 mb-2">SOC2</div>
+                    <div class="text-lg font-semibold text-gray-900">Certified</div>
+                    <p class="text-base text-gray-600">Security Standard</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-yellow-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-yellow-700 mb-2">24/7</div>
+                    <div class="text-lg font-semibold text-gray-900">Support</div>
+                    <p class="text-base text-gray-600">Expert Assistance</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-teal-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-5xl font-bold text-teal-700 mb-2">85%</div>
+                    <div class="text-lg font-semibold text-gray-900">Cost Reduction</div>
+                    <p class="text-base text-gray-600">Average Savings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Enterprise Ready Platform for your Business</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Designed from Day 1 for enterprise-grade scalability, reliability, security, data privacy, reliability and service excellence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SLA Backed Support</h3>
+                    <p class="text-base text-gray-600">Get timely and reliable assistance whenever they need it. 99.99% uptime guarantee on our SaaS platform with dedicated support teams available around the clock.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Partner Community</h3>
+                    <p class="text-base text-gray-600">A strong and vibrant partner community that is committed to helping our customers succeed with comprehensive training and certification programs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Workflows with RBAC</h3>
+                    <p class="text-base text-gray-600">Robust Role Based Access Control (RBAC)-enabled workflows that help businesses securely manage access to their data and processes with granular permissions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Encrypted Private Cloud</h3>
+                    <p class="text-base text-gray-600">No Data leaves your environment. Military-grade encryption for data at rest as well in motion with complete control over your information security.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">API/Webhook Integrations</h3>
+                    <p class="text-base text-gray-600">For seamless connection with upstream and downstream systems including enterprise applications, databases, and third-party services.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SOC2 / ISO 27001</h3>
+                    <p class="text-base text-gray-600">Highest standards of information security and compliance with international regulation standards ensuring your data is protected at all times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-16">One Platform. Many Solutions</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Finance & Accounts</h3>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-left text-base">
+                        <li>Automated Invoice Processing</li>
+                        <li>Company Filings Extraction</li>
+                        <li>Lease Abstraction Automation</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Learn More</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Legal & Compliance</h3>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-left text-base">
+                        <li>Contract Automation & Intelligence</li>
+                        <li>eDiscovery Process Automation</li>
+                        <li>Patent Research Process Automation</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Learn More</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Operations & Digital Transformation</h3>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-left text-base">
+                        <li>Asset Data Management</li>
+                        <li>Claims Process Automation</li>
+                        <li>FHIR Compliance Automation</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Learn More</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Research & Analysis</h3>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-left text-base">
+                        <li>Company Comparable Analysis Automation</li>
+                        <li>Corporate Actions Automation</li>
+                        <li>Market & Competitive Intelligence Monitoring</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Learn More</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Risk & Governance</h3>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-left text-base">
+                        <li>KYC Automation</li>
+                        <li>Tender Monitoring & Risk Analysis</li>
+                        <li>Automated Underwriting</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Learn More</a>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Sales & Support</h3>
+                    <ul class="space-y-2 text-gray-700 mb-6 text-left text-base">
+                        <li>Call Transcripts Analysis Automation</li>
+                        <li>Contact Center Automation</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">See   theagents.ai Platform In Action</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Learn how Synapse.ai Intelligent Document Process can drive ROI, reduce costs, and save time for your business.
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+                <form class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="fullName" class="sr-only">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Full Name *" required class="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                    </div>
+                    <div>
+                        <label for="phone" class="sr-only">Phone</label>
+                        <input type="tel" id="phone" placeholder="Phone *" required class="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="workEmail" class="sr-only">Work Email</label>
+                        <input type="email" id="workEmail" placeholder="Work Email *" required class="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="company" class="sr-only">Company</label>
+                        <input type="text" id="company" placeholder="Company *" required class="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="problem" class="sr-only">Share your process automation problem</label>
+                        <textarea id="problem" placeholder="Share your process automation problem" rows="4" class="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-200 resize-y"></textarea>
+                    </div>
+                    <div class="sm:col-span-2 text-center">
+                        <button type="submit" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-2">
+                            Get Started
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="m22 2-7 7L10 22l-7-7 7-7 7-7z"/><path d="m15 7 4-4"/></svg>
+                        </button>
+                    </div>
+                </form>
+                <p class="text-base text-gray-500 text-center mt-6">Please fill in all mandatory fields to successfully submit the form.</p>
+            </div>
+
+            <div class="mt-20 max-w-xl mx-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white p-12 rounded-xl shadow-2xl">
+                <h3 class="text-3xl font-bold mb-6 text-center">Subscribe to our newsletter</h3>
+                <p class="text-lg opacity-90 mb-6 text-center">
+                    For product announcements and exclusive insights on enterprise applications of Gen-AI and Agentic Automation
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <input type="email" placeholder="Your email address" class="w-full sm:w-2/3 px-6 py-3 rounded-full text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 text-lg">
+                    <button class="bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-800 transition-colors w-full sm:w-auto">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="font-semibold text-xl mb-4">Platform</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Data Capture Agents</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Document AI</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">PDF Understanding</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Form Understanding</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Web Page Understanding</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Table AI</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Text AI</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Agentic Workflows</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Intelligent Crawler</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Connectors</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Document Reconciler</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Intelligent Notifier</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Smart Integration</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Document Enricher</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Enterprise Workflows</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">AI Search</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Document Search and Management</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Cognitive Search</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Query & Filter</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Release Notes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-4">Solutions</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Automated Invoice Processing</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Company Filings Extraction</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Lease Abstraction Automation</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Financial Spreading Automation</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Contract Automation & Intelligence</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">eDiscovery Process Automation</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Patent Research Process Automation</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Asset Data Management</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Claims Process Automation</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">FHIR Compliance Automation</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Document Management</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Knowledge Process Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">About us</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Team</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Contact us</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Community</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Certification</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 text-base hover:text-white transition-colors">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="h-px bg-gray-700 mb-8"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-6 mb-4 md:mb-0">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                        theagents.ai
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors text-base">
+                            LinkedIn
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors text-base">
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-base text-gray-400">
+                    Copyright 2024 © theagents.ai. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the "Enterprise AI Capabilities" section tabs
+        const capabilitiesData = [
+            {
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>',
+                title: "Data Capture Agents",
+                description: "Capture insights from unstructured data like PDFs, text, audio, images with autonomous Agents. Process invoices, contracts, forms, and documents with 99.5% accuracy using advanced OCR and NLP technologies.",
+                gradient: "from-blue-500 to-cyan-500",
+                features: ["Advanced OCR & Document Understanding", "Intelligent Form Processing", "Invoice & Contract Automation", "Multi-format Data Extraction"],
+                // IMPORTANT: Replace this URL with the actual URL of your hosted image for this section
+                image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+            },
+            {
+                icon: '<svg xmlns="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M19 9h1a2 2 0 0 1 0 4h-1a2 2 0 0 0 0 4h1"/><path d="M5 9h-1a2 2 0 0 0 0 4h1a2 2 0 0 1 0 4h-1"/><path d="M12 2v20"/></svg>',
+                title: "Agentic Workflows",
+                description: "Unlock the power of autonomous Workflows and reengineer all your enterprise processes. Create multi-step workflows that adapt, learn, and optimize themselves based on real-time data and outcomes.",
+                gradient: "from-purple-500 to-pink-500",
+                features: ["Multi-Agent Orchestration", "Dynamic Process Optimization", "Human-in-the-Loop Workflows", "Real-time Workflow Analytics"],
+                // IMPORTANT: Replace this URL with the actual URL of your hosted image for this section
+                image: "	https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" 
+            },
+            {
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
+                title: "AI Search",
+                description: "Empower your searches with high precision and speed using our advanced AI Search Engine. Semantic search across all your enterprise data with natural language queries and contextual understanding.",
+                gradient: "from-green-500 to-emerald-500",
+                features: ["Semantic Search Technology", "Natural Language Queries", "Cross-Platform Data Search", "Smart Filtering & Results"],
+                // IMPORTANT: Replace this URL with the actual URL of your hosted image for this section
+                image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"
+            },
+            {
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+                title: "Conversational AI",
+                description: "Elevate productivity with Conversational Agents, your AI-driven partner for smarter operations. Deploy intelligent chatbots and virtual assistants that understand context and provide actionable insights.",
+                gradient: "from-orange-500 to-red-500",
+                features: ["Intelligent Chatbot Deployment", "Context-Aware Conversations", "Multi-Language Support", "Voice & Text Integration"],
+                // IMPORTANT: Replace this URL with the actual URL of your hosted image for this section
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
+            },
+            {
+                icon: '<img xmlns="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-3"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></img>',
+                title: "AI Analytics",
+                description: "Navigate insights effortlessly with Analytics & Dashboard for actionable intelligence. Real-time analytics, predictive insights, and automated reporting to drive data-driven decision making.",
+                gradient: "from-indigo-500 to-purple-500",
+                features: ["Real-time Analytics Dashboard", "Predictive Intelligence", "Custom Report Generation", "Automated Insights"],
+                // IMPORTANT: Replace this URL with the actual URL of your hosted image for this section
+                image: ":	https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"
+            },
+            {
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot"><path d="M12 8V4H8"/><path d="M22 7.2L2 22l-.4-1.6L22 7.2z"/><path d="M2.8 2l19 19-.4 1.6L2.8 2z"/></svg>',
+                title: "AI Assistants",
+                description: "Acts as an intelligent assistant to perform complex tasks autonomously and provide context-aware support. Virtual assistants that learn from your business processes and adapt to your organizational needs.",
+                gradient: "from-teal-500 to-blue-500",
+                features: ["Autonomous Task Execution", "Context-Aware Support", "Adaptive Learning Algorithms", "Personalized Business Assistance"],
+                // IMPORTANT: Replace this URL with the actual URL of your hosted image for this section
+                image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
+            }
+        ];
+
+        const capabilitiesTabsContainer = document.getElementById('capabilities-tabs');
+        const capabilityDisplayCard = document.getElementById('capability-display-card');
+        let activeTabIndex = 0; // Initial active tab index
+
+        function renderCapabilitiesTabs() {
+            capabilitiesTabsContainer.innerHTML = ''; // Clear existing tabs
+            capabilitiesData.forEach((capability, index) => {
+                const button = document.createElement('button');
+                button.setAttribute('data-index', index);
+                button.className = `px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg transform hover:scale-105 hover:shadow-xl ${
+                    activeTabIndex === index
+                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-xl scale-105'
+                        : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200 hover:shadow-lg'
+                }`;
+                button.innerHTML = `
+                    <div class="flex items-center gap-2">
+                        ${capability.icon.replace(/width="24" height="24"/, 'width="24" height="24"')}
+                        ${capability.title}
+                    </div>
+                `;
+                button.addEventListener('click', () => {
+                    activeTabIndex = index;
+                    renderCapabilitiesTabs();
+                    renderCapabilityCard(activeTabIndex);
+                });
+                capabilitiesTabsContainer.appendChild(button);
+            });
+        }
+
+        function renderCapabilityCard(index) {
+            const capability = capabilitiesData[index];
+            capabilityDisplayCard.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="p-8 md:p-12">
+                        <div class="w-24 h-24 bg-gradient-to-r ${capability.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg transform hover:scale-110 transition-all duration-300">
+                            ${capability.icon.replace(/width="24" height="24"/, 'width="48" height="48" class="text-white"')}
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">${capability.title}</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-8">${capability.description}</p>
+                        
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-4">Key Features:</h4>
+                            ${capability.features.map(feature => `
+                                <div class="flex items-center gap-3 text-lg hover:translate-x-2 transition-transform duration-200">
+                                    <div class="w-3 h-3 bg-gradient-to-r ${capability.gradient} rounded-full flex-shrink-0"></div>
+                                    <span class="text-gray-700 font-medium">${feature}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="relative overflow-hidden lg:rounded-r-lg min-h-[300px] lg:min-h-full">
+                        <img 
+                            src="${capability.image}" 
+                            alt="${capability.title}"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-r ${capability.gradient} opacity-20"></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Sticky Header JavaScript
+        const header = document.getElementById('main-header');
+        const stickyClass = 'shadow-lg'; // Class to add when sticky
+        const normalClass = 'shadow-sm'; // Class when not sticky
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) { // If scrolled down
+                header.classList.add(stickyClass);
+                header.classList.remove(normalClass);
+            } else { // At the top
+                header.classList.remove(stickyClass);
+                header.classList.add(normalClass);
+            }
+        });
+
+
+        // Initial render for capabilities section and general button handlers on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCapabilitiesTabs();
+            renderCapabilityCard(activeTabIndex);
+
+            // Add simple alerts for main "Get Started" and "Watch Demo" buttons
+            document.querySelector('.hero button:first-of-type').addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Get Started Now! (Static demo)');
+            });
+
+            document.querySelector('.hero button:last-of-type').addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Watch Demo! (Static demo)');
+            });
+
+            // "Get Started" button in the form
+            const formGetStartedButton = document.querySelector('.max-w-3xl.mx-auto form button[type="submit"]');
+            if (formGetStartedButton) {
+                formGetStartedButton.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent actual form submission
+                    const form = formGetStartedButton.closest('form');
+                    const requiredInputs = form.querySelectorAll('input[required], textarea[required]');
+                    let allFilled = true;
+                    requiredInputs.forEach(input => {
+                        if (!input.value.trim()) {
+                            allFilled = false;
+                            input.style.borderColor = 'red'; // Simple visual feedback
+                        } else {
+                            input.style.borderColor = ''; // Reset border
+                        }
+                    });
+
+                    if (allFilled) {
+                        alert('Form Submitted! (Static demo)');
+                        form.reset(); // Clear form
+                    } else {
+                        alert('Please fill in all mandatory fields.');
+                    }
+                });
+            }
+
+            // Newsletter subscribe button specific handler
+            const newsletterButton = document.querySelector('.mt-20.max-w-xl.mx-auto button');
+            if (newsletterButton) {
+                newsletterButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const emailInput = newsletterButton.previousElementSibling;
+                    if (emailInput && emailInput.value) {
+                        alert(`Subscribed with: ${emailInput.value} (Static demo)`);
+                        emailInput.value = ''; // Clear input
+                    } else {
+                        alert('Please enter your email address to subscribe.');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
